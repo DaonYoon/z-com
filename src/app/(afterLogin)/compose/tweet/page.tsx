@@ -1,5 +1,7 @@
-export default function Login() {
+import Home from "../../home/page";
+
+export default function Tweet() {
     return (
-        <div>Login</div>
+       <Home />
     )
 }
