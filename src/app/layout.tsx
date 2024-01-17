@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import styles from "@/app/(beforeLogin)/_component/main.module.css"
+import styles from "@/app/(beforeLogin)/_component/main.module.css";
 import { MSWComponent } from "./_component/MSWCompont";
+import AuthSession from "./_component/AuthSession";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <MSWComponent />
-        <div className={styles.container}>{children}</div>
+        <div className={styles.container}>
+          <AuthSession>{children}</AuthSession>
+        </div>
       </body>
     </html>
   );
