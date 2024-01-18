@@ -9,7 +9,6 @@ export default function TrendSection() {
   const pathname = usePathname();
   const {data: session} = useSession();
 
-  console.log(pathname)
 
   if(pathname === '/explore') return null;
 
