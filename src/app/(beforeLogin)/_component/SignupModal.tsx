@@ -1,8 +1,8 @@
 "use client";
 
 import style from './signup.module.css';
-import { onSubmit } from '../_lib/signup';
-import BackButton from '@/app/(afterLogin)/_component/BackButton';
+import onSubmit from '../_lib/signup';
+import BackButton from "@/app/(beforeLogin)/_component/BackButton";
 import { useFormState, useFormStatus } from 'react-dom';
 
 function showMessage(messasge: string) {

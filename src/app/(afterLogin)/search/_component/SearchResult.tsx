@@ -1,7 +1,7 @@
 "use client";
 
 import Post from "@/app/(afterLogin)/_component/Post";
-import { Post as IPost } from '../../../model/Post';
+import { Post as IPost } from '@/model/Post';
 import {getSearchResult} from "@/app/(afterLogin)/search/_lib/getSearchResult";
 import {useQuery} from "@tanstack/react-query";
 

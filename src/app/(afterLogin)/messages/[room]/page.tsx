@@ -38,7 +38,7 @@ export default function ChatRoom() {
             return (
               <div
                 key={m.messageId}
-                className={cx(style.message, style.qq)}>
+                className={cx(style.message, style.myMessage)}>
                 <div className={style.content}>{m.content}</div>
                 <div className={style.date}>{dayjs(m.createdAt).format('YYYY년 MM월 DD일 A HH시 mm분')}</div>
               </div>

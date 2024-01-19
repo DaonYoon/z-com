@@ -1,5 +1,6 @@
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials";
+import {NextResponse} from "next/server";
 
 export const {
   handlers: { GET, POST },
@@ -29,6 +30,7 @@ export const {
         }
 
         const user = await authResponse.json()
+        console.log('user', user);
         return {
           email: user.id,
           name: user.nickname,

@@ -1,10 +1,5 @@
 import { User } from "./User";
-
-export interface PostImage {
-  link: string,
-  imageId: number,
-  Post?: Post
-}
+import {PostImage} from "@/model/PostImage";
 
 export interface Post {
   postId: number;
